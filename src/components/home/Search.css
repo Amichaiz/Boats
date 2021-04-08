@@ -1,0 +1,46 @@
+.line{
+    padding:15px;
+   
+}
+
+.search-area{
+    background-color: darkgray;
+    margin-right: 5px;
+}
+.right-side{
+width: 80px;
+margin-right: 20%;
+height: 20px;
+border: none;
+border-bottom: 2px solid rgb(29, 70, 160); 
+background-color: darkgray;
+color: rgb(24, 80, 112);
+}
+.left-side{
+   
+    width: 80px;
+    margin-right: 5px;
+    border: none;
+    border-bottom: 2px solid rgb(29, 70, 160); 
+background-color: darkgray;
+color: rgb(24, 80, 112);
+}
+
+.butboat{
+    background-color: rgb(201, 199, 199); 
+    color: black; 
+    border: 2px solid #008CBA; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+      
+.butboat:hover {
+    background-color: #008CBA;
+    color: rgb(255, 255, 255); 
+    
+}

@@ -1,0 +1,39 @@
+.navbar ul { 
+	margin: 0; 
+	 padding: 5px;
+	list-style-type: none; 
+	text-align: center; 
+	background-color: rgb(120, 213, 250); 
+	} 
+	.navbar{
+		background-color: rgb(120, 213, 250); 
+	}
+  .nav-contain{
+	  width: 80%;
+	  margin: auto;
+  }
+.navbar ul li {  
+	display: inline; 
+	text-decoration: none; 
+	padding: .2em 1em; 
+	color: rgb(0, 0, 0); 
+	} 
+
+
+.ref{
+	color: rgb(6, 6, 128);
+	text-decoration: none;
+	padding:5px;
+}
+.ref:hover { 
+	color: #000; 
+	background-color: #fff; 
+	} 
+.right{
+	margin-left: 40%;
+}
+@media (max-width: 810px) {
+	.right{
+		margin-left: 10%;
+	}
+  }
