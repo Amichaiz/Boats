@@ -2,7 +2,7 @@ import './Card.css'
 
 const Card = (props) => {
     const getusercontact = (num) => {
-        fetch(`https://git.heroku.com/boat-prime.git/specuser?q=${num}`)
+        fetch(`https://boat-prime.herokuapp.com/specuser?q=${num}`)
       .then(res => res.json())
       .then(data => {
           console.log(data.email);
