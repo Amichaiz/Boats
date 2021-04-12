@@ -10,6 +10,8 @@ app.use(cors());
 app.use(exp.json());
 app.use(exp.static(__dirname));
 
+app.listen(port, () => console.log('-> Listening on port ' + port));
+
 app.post('/adduser', (req, res) => {
 
     DB.adduser(req.body)
@@ -102,7 +104,7 @@ app.get('/userbymail', (req, res) => {
     })
 })
 
-app.listen(process.env.PORT || 3001, () => {
+/*app.listen(process.env.PORT || 3001, () => {
     console.log(`app is running on port ${process.env.PORT}`);
-  })
+  })*/
 
