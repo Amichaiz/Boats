@@ -12,7 +12,7 @@ const Sell = () => {
     const [seller, setSeller] = useState('');
 
     useEffect(() => {
-        fetch(`https://git.heroku.com/boat-prime.git/userbymail?q=${sessionStorage.getItem('email')}`)
+        fetch(`https://boat-prime.herokuapp.com/userbymail?q=${sessionStorage.getItem('email')}`)
         .then(res => res.json())
         .then(data => {
             setSeller(data)
