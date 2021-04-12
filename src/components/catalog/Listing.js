@@ -11,7 +11,7 @@ const Listing = () => {
         sessionStorage.removeItem('data')
       }
       else(
-        fetch(`https://git.heroku.com/boat-prime.git/boats`)
+        fetch(`https://boat-prime.herokuapp.com/boats`)
         .then(res => res.json())
         .then(data => {
           console.log(data);
