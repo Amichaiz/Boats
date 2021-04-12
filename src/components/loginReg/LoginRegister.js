@@ -13,7 +13,7 @@ const LoginRegister = () => {
   const [clicked, setclick] = useState(false);
 
   const addUser = (e) => {
-    fetch(`https://git.heroku.com/boat-prime.git/adduser`, {
+    fetch(`https://boat-prime.herokuapp.com/adduser`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json', // this needs to be defined
@@ -34,7 +34,7 @@ const LoginRegister = () => {
   }
   const checkUser = (e) => {
     e.preventDefault()
-    fetch(`https://git.heroku.com/boat-prime.git/checkuser`, {
+    fetch(`https://boat-prime.herokuapp.com/checkuser`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json', // this needs to be defined
