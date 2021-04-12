@@ -4,6 +4,7 @@ const DB = require('./modules/db.js')
 
 const app = exp();
 
+const path = require('path');
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.use(cors());
