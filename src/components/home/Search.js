@@ -12,7 +12,7 @@ const Search = () => {
   const [model, setmodel] = useState('');
 
   const findBoat = () => {
-    fetch(`https://git.heroku.com/boat-prime.git/params?s=${boatStyle}&c=${typeCondition}&l=${boutLength}&pmi=${priceMin}&pma=${priceMax}&ymi=${yearMin}&yma=${yearMax}`)
+    fetch(`https://boat-prime.herokuapp.com/params?s=${boatStyle}&c=${typeCondition}&l=${boutLength}&pmi=${priceMin}&pma=${priceMax}&ymi=${yearMin}&yma=${yearMax}`)
       .then(res => res.json())
       .then(data => {
         console.log(data);
