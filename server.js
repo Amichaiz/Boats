@@ -3,6 +3,9 @@ const cors = require('cors')
 const DB = require('./modules/db.js')
 
 const app = exp();
+
+app.use(express.static(path.join(__dirname, 'build')));
+
 app.use(cors());
 app.use(exp.json());
 app.use(exp.static(__dirname));
