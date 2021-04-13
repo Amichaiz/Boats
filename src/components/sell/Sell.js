@@ -23,7 +23,7 @@ const Sell = () => {
     },[])
     const addBout = (e) => {
         
-        fetch(`https://git.heroku.com/boat-prime.git/addbout`, {
+        fetch(`https://boat-prime.herokuapp.com/addbout`, {
           method: "POST",
           headers: {
             'Content-Type': 'application/json', // this needs to be defined
