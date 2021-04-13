@@ -1,15 +1,17 @@
 const exp = require('express');
-const cors = require('cors')
+const cors = require('cors');
+const app = exp();
+const path = require('path');
+const port = process.env.PORT || 3001;
 const DB = require('./modules/db.js')
 
-const app = exp();
-
-const path = require('path');
-app.use(express.static(path.join(__dirname, 'build')));
-
+app.use(exp.static(__dirname));
+app.use(exp.static(path.join(__dirname, 'build')));
 app.use(cors());
 app.use(exp.json());
-app.use(exp.static(__dirname));
+
+app.listen(port, () => console.log('Listening on port ' + port));
+
 
 app.post('/adduser', (req, res) => {
 
