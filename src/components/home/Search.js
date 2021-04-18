@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Redirect } from "react-router-dom";
 
 import './Search.css'
 const Search = () => {
@@ -19,7 +18,7 @@ const Search = () => {
       .then(data => {
         console.log(data);
         sessionStorage.setItem('data', JSON.stringify(data));
-        return <Redirect to='/boats' />
+        window.location.replace('/boats')
       })
       .catch(err => {
         console.log(err);
