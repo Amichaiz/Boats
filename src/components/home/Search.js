@@ -6,8 +6,8 @@ const Search = () => {
   const [boutLength, setboutLength] = useState('');
   const [priceMin, setPriceMin] = useState(0);
   const [priceMax, setpriceMax] = useState(5000000);
-  const [yearMin, setyearMin] = useState('0');
-  const [yearMax, setyearMax] = useState('2022');
+  const [yearMin, setyearMin] = useState(0);
+  const [yearMax, setyearMax] = useState(2022);
   const [brand, setbrand] = useState('');
   const [model, setmodel] = useState('');
 
