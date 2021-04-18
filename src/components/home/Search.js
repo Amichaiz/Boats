@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Redirect } from "react-router-dom";
+
 import './Search.css'
 const Search = () => {
   const [boatStyle, setboutStyle] = useState('sail');
@@ -17,7 +19,7 @@ const Search = () => {
       .then(data => {
         console.log(data);
         sessionStorage.setItem('data', JSON.stringify(data));
-        window.location.replace('/boats')
+        return <Redirect to='/boats' />
       })
       .catch(err => {
         console.log(err);
