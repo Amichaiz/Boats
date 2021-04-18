@@ -42,7 +42,8 @@ const specboats = (s,c,l,pmi,pma,ymi,yma) =>{
     console.log(s,c,l,pmi,pma,ymi,yma);
     return db.select('*')
     .from('sale')
-    .whereRaw(`style LIKE ? and condition LIKE ? `, [s,c])
+    .whereRaw(`style LIKE ? ${s}`)
+    .whereRaw(`condition LIKE ? ${c}`)
     .whereRaw(`price between ${pmi} AND ${pma}`)
     .whereRaw(`year between ${ymi} AND ${yma}`)
 }
